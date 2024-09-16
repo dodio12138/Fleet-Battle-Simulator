@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Battle Simulator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="title">舰队战斗模拟器</h1>
+
+    <div class="fleet-panel">
+        <table id="fleet1Panel" class="fleet-table">
+            <thead>
+                <tr>
+                    <th>舰船名称</th>
+                    <th>血量</th>
+                    <th>攻击力</th>
+                    <th>护甲</th>
+                    <th>速度</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    
+        <table id="fleet2Panel" class="fleet-table">
+            <thead>
+                <tr>
+                    <th>舰船名称</th>
+                    <th>血量</th>
+                    <th>攻击力</th>
+                    <th>护甲</th>
+                    <th>速度</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <div id="output"></div>
+    <button class="pure-button pure-button-primary" id="startButton" onclick="startBattle()">Start Battle</button>
+
+<script src="script.js"></script>
+</body>
+</html>
